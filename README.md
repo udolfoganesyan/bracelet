@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/udolfoganesyan/FintechApp.svg?branch=homework13)](https://travis-ci.org/udolfoganesyan/FintechApp)
 
 ### Project Name
-# FintechApp
+# BraceletApp
 
 ### Author
 Rudolf Oganesyan
