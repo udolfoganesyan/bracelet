@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>596138335134-4j8tdnd8i8loo7ebl9mafcmp7vdp2rp9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.596138335134-4j8tdnd8i8loo7ebl9mafcmp7vdp2rp9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqLdtDoc85o0fqbVFW9F6iJG9QDqNVU-g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>596138335134</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.bracelet.miem</string>
+	<key>PROJECT_ID</key>
+	<string>bracelet-701a2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bracelet-701a2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:596138335134:ios:63caeda09825a8ff81548f</string>
+</dict>
+</plist>

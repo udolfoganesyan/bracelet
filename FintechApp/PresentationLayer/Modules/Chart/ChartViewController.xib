@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartViewController" customModule="FintechApp" customModuleProvider="target">
+            <connections>
+                <outlet property="chartContainer" destination="7NB-jJ-3ci" id="0yE-BF-2pV"/>
+                <outlet property="farChartCOntainer" destination="KEe-ar-rkU" id="X2T-e1-AgD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Покажет сколько вы взаимодействовали с людьми за последний месяц" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1w-QE-7YY">
+                    <rect key="frame" x="20" y="74" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NB-jJ-3ci" customClass="BarChartView" customModule="Charts">
+                    <rect key="frame" x="15" y="145" width="384" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="i7t-uH-eOW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEe-ar-rkU" customClass="BarChartView" customModule="Charts">
+                    <rect key="frame" x="15" y="385" width="384" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="U4M-NT-AZ4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7NB-jJ-3ci" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="8bt-vf-Tj9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7NB-jJ-3ci" secondAttribute="trailing" constant="15" id="I30-00-man"/>
+                <constraint firstAttribute="trailing" secondItem="v1w-QE-7YY" secondAttribute="trailing" constant="20" id="IaD-rC-Lr6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KEe-ar-rkU" secondAttribute="trailing" constant="15" id="SQp-iK-aL9"/>
+                <constraint firstItem="KEe-ar-rkU" firstAttribute="top" secondItem="7NB-jJ-3ci" secondAttribute="bottom" constant="40" id="UvP-du-Yek"/>
+                <constraint firstItem="v1w-QE-7YY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="aTJ-LX-qH0"/>
+                <constraint firstItem="7NB-jJ-3ci" firstAttribute="top" secondItem="v1w-QE-7YY" secondAttribute="bottom" constant="30" id="cME-3T-FQP"/>
+                <constraint firstItem="v1w-QE-7YY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hOx-wi-Yyn"/>
+                <constraint firstItem="KEe-ar-rkU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="wa3-4e-HqQ"/>
+            </constraints>
+            <point key="canvasLocation" x="112" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
