@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BluetoothViewController" customModule="FintechApp" customModuleProvider="target">
             <connections>
+                <outlet property="bluetoothButton" destination="Cdj-lQ-NeW" id="WJZ-iL-JNf"/>
                 <outlet property="callButton" destination="AZo-Dl-5Ms" id="kVu-KT-Zyz"/>
                 <outlet property="callContainer" destination="KDj-ix-e7g" id="3mb-WJ-lnq"/>
                 <outlet property="testButton" destination="16H-Je-HW5" id="UME-UV-2fZ"/>
@@ -95,13 +96,30 @@
                         <constraint firstItem="AZo-Dl-5Ms" firstAttribute="leading" secondItem="KDj-ix-e7g" secondAttribute="leading" constant="20" id="ZfR-nH-SrN"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdj-lQ-NeW">
+                    <rect key="frame" x="40" y="514" width="334" height="46"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="a3m-Ip-Cfx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Bluetooth">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="bluetoothAction:" destination="-1" eventType="touchUpInside" id="v4s-CE-VlN"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="KDj-ix-e7g" firstAttribute="top" secondItem="Cae-Kt-VLC" secondAttribute="bottom" constant="40" id="4Zm-1P-hQH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cdj-lQ-NeW" secondAttribute="trailing" constant="40" id="LWW-kv-PI5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cae-Kt-VLC" secondAttribute="trailing" constant="20" id="Ql9-Wl-VAP"/>
                 <constraint firstItem="Cae-Kt-VLC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="biY-as-8dH"/>
+                <constraint firstItem="Cdj-lQ-NeW" firstAttribute="top" secondItem="KDj-ix-e7g" secondAttribute="bottom" constant="60" id="eYq-AL-DxY"/>
+                <constraint firstItem="Cdj-lQ-NeW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="eh0-VP-M0t"/>
                 <constraint firstItem="Cae-Kt-VLC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="p03-Ze-Q7V"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KDj-ix-e7g" secondAttribute="trailing" constant="20" id="paR-fe-RdH"/>
                 <constraint firstItem="KDj-ix-e7g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pnh-T4-YyH"/>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseRoleViewController" customModule="FintechApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Ewi-Ei-BoU" id="plh-aK-feN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ewi-Ei-BoU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-l5-A5o">
+                    <rect key="frame" x="147" y="757" width="120" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Peripheral Mode">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="peripheralAction:" destination="-1" eventType="touchUpInside" id="0n5-ZT-GFD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3P-3U-G2e">
+                    <rect key="frame" x="157.5" y="119" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Central Mode">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="centralAction:" destination="-1" eventType="touchUpInside" id="DQN-zL-ba9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wPp-Dz-rCg"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="b3P-3U-G2e" firstAttribute="centerX" secondItem="Ewi-Ei-BoU" secondAttribute="centerX" id="B6u-UF-06H"/>
+                <constraint firstItem="wPp-Dz-rCg" firstAttribute="bottom" secondItem="Ydp-l5-A5o" secondAttribute="bottom" constant="75" id="QKr-fH-6ta"/>
+                <constraint firstItem="Ydp-l5-A5o" firstAttribute="centerX" secondItem="b3P-3U-G2e" secondAttribute="centerX" id="U7X-0Q-EXM"/>
+                <constraint firstItem="b3P-3U-G2e" firstAttribute="top" secondItem="wPp-Dz-rCg" secondAttribute="top" constant="75" id="bdM-M2-Kxn"/>
+                <constraint firstItem="Ydp-l5-A5o" firstAttribute="centerX" secondItem="Ewi-Ei-BoU" secondAttribute="centerX" id="ddL-dP-6gZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-41" y="192"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

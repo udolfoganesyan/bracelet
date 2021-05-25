@@ -52,14 +52,18 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let conversationsVC = ConversationsViewController(conversationsInteractor: conversationsInteractor, presentationAssembly: presentationAssembly)
         
         let messagesNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "messages"), selectedImage: #imageLiteral(resourceName: "messages"), rootViewController: conversationsVC)
+        messagesNavController.tabBarItem.title = "Уведомления"
         
         //search
         let radarNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "radar"), selectedImage: #imageLiteral(resourceName: "radar"), rootViewController: RadarViewController())
-        
+        radarNavController.tabBarItem.title = "Радар"
+
         let statsNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "stats"), selectedImage: #imageLiteral(resourceName: "stats"), rootViewController: ChartViewController())
-        
+        statsNavController.tabBarItem.title = "Статистика"
+
         let otherNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "other"), selectedImage: #imageLiteral(resourceName: "other"), rootViewController: BluetoothViewController())
-        
+        otherNavController.tabBarItem.title = "Другое"
+
         tabBar.tintColor = .black
         
         viewControllers = [messagesNavController,

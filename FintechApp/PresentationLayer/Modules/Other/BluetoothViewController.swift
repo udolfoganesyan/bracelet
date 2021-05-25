@@ -21,6 +21,7 @@ class BluetoothViewController: UIViewController {
     @IBOutlet weak var callContainer: UIView!
     @IBOutlet weak var callButton: UIButton!
     
+    @IBOutlet weak var bluetoothButton: UIButton!
     
     //    @IBOutlet weak var heartRateLabel: UILabel!
 //    @IBOutlet weak var bodySensorLocationLabel: UILabel!
@@ -47,6 +48,9 @@ class BluetoothViewController: UIViewController {
         callButton.layer.cornerRadius = 12
         callButton.layer.masksToBounds = true
         
+        bluetoothButton.layer.cornerRadius = 12
+        bluetoothButton.layer.masksToBounds = true
+        
         centralManager = CBCentralManager(delegate: self, queue: nil)
         
         // Make the digits monospaces to avoid shifting when the numbers change
@@ -69,6 +73,12 @@ class BluetoothViewController: UIViewController {
         if let url = URL(string: "tel://8-800-2000-112") {
             UIApplication.shared.openURL(url)
         }
+    }
+    
+    @IBAction func bluetoothAction(_ sender: UIButton) {
+        
+        let vc = ChooseRoleViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func onHeartRateReceived(_ heartRate: Int) {
